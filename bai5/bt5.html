@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: black;
+            max-width: 700px;
+            height: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+
+        #form {
+            border-radius: 10px;
+            background-color: wheat;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        #add-questions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        #add-question {
+            margin-left: 20px;
+            border-radius: 5px;
+            padding: 10px 20%;
+        }
+        #form #add {
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .delete {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+
+        #form .list-questions {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px gray;
+            margin-bottom: 10px;
+            border-bottom: 1px solid gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h2>To-Do List K24_PTIT</h2>
+        <div id="add-questions">
+           <input type="text" id="add-question" placeholder="Nhập nhiệm vụ..."></input>
+           <br>
+           <p style="display: none;" id="error"></p>
+           <button id="add">Thêm</button>
+        </div>
+        <div id = "list-questions"></div>
+                
+    </form>
+    <script src="./bt5.js"></script>
+</body>
+</html>
